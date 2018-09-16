@@ -23,13 +23,13 @@ The Arduino has to be attatched to the player body, we screwd the Arduino on a w
 Then cables have to connect the Arduino to every sensor, following the wirings explained in the wirings section of this guide. Then you need a long USB cable to connect the Arduino to the PC in order to play.
 
 # Wirings 
-![alt text](https://github.com/SZamboni/ProjectAres/blob/master/Wirings_bb.png)
+![alt text](https://github.com/SZamboni/ProjectAres/blob/master/Wirings.png)
 The wirings is very simple: VCC, GND, SDA, SCL for every sensor are in parallel with all the other sensors and ther attatched to Arduino.
 Then every sensor has its AD0 pin attatched to a different pin to Arduino (Right Leg Sensor -> pin 2 Arduino, Left Leg Sensor -> pin 3 Arduino, Head Sensor -> pin 4 Arduino, Right Arm Sensor -> pin 5 Arduino, Left Arm Sensor -> pin 6 Arduino)
 
 # Final product
 The final product shoul look something like this when dressed:
-![alt text](https://github.com/SZamboni/ProjectAres/blob/master/IMG_20180814_153559.jpg)
+![alt text](https://github.com/SZamboni/ProjectAres/blob/master/project%20Ares%20hardware%20image.jpg)
 As you can see there are 5 sensors, one for each arm, one for each leg and one on the head, attached to a running band. Every sensor is connected to the Arduino following the previously explained wirings and fos stability porupouse we weld all the connection to the wirings and covered the welding with insulating tape.
 
 # Software instruction

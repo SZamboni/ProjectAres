@@ -30,11 +30,11 @@ Then every sensor has its AD0 pin attatched to a different pin to Arduino (Right
 # Final product
 The final product shoul look something like this when dressed:
 ![alt text](https://github.com/SZamboni/ProjectAres/blob/master/IMG_20180814_153559.jpg)
-As you can see there are 5 sensors, one for ecery arm, one for every leg and one on the head, attatchet do a running band. Every sensor is connected to the Arduino following the previously explained wirings and fos stability porupouse we weld all the connection to the wirings and covered the welding with insulating tape.
+As you can see there are 5 sensors, one for each arm, one for each leg and one on the head, attached to a running band. Every sensor is connected to the Arduino following the previously explained wirings and fos stability porupouse we weld all the connection to the wirings and covered the welding with insulating tape.
 
 # Software instruction
-Attach the Arduino to the USB port on your computer, open the Aruduino IDE, load the program arduino_code.ino, and load the program on the Arduino. DO NOT OPEN THE SERIAL MONITOR.
-Open the processing IDE and load the processing_code.pde program, and run it.
+Attach the Arduino to the USB port on your computer, open the Aruduino IDE, load the Project_Ares_Arduino.ino, and load the program on the Arduino. DO NOT OPEN THE SERIAL MONITOR.
+Open the processing IDE and load the processing_desktop.pde program, and run it.
 Open notepad. When you do a left punch you should see the c character appear on the screen.
 If you have some problems check the COM port open in the Processing IDE.
 

@@ -4,31 +4,32 @@ The project is a collaboration between me and Michele Roselli (you can find him 
 
 # Bills of materials 
 Hardware:
--Arduino-like controller
--5 GY-521 gyroscope and accellerometers
--a lot af cables
--wood and strings to attach to the body the GY-521 sensors
--a long USB cable ( > 2m long) to connect Arduino to the PC
+- Arduino-like controller
+- 5 GY-521 gyroscope and accellerometers
+- a lot af cables
+- wood and strings to attach to the body the GY-521 sensors
+- a long USB cable ( > 2m long) to connect Arduino to the PC
 
 Software:
--a PC with the Arduino IDE
--the library Wire.h in the Arduino IDE (it is usually already present in the Arduino IDE)
--the library MPU6050.h (https://github.com/jarzebski/Arduino-MPU6050) installed in the Arduino IDE
--the Processing 3.4 IDE 
--the libraries processing.serial and java.awt.Robot installed in the Processing IDE (they are usually alreay present in the Processing IDE)
+- a PC with the Arduino IDE
+- the library Wire.h in the Arduino IDE (it is usually already present in the Arduino IDE)
+- the library MPU6050.h (https://github.com/jarzebski/Arduino-MPU6050) installed in the Arduino IDE
+- the Processing 3.4 IDE 
+- the libraries processing.serial and java.awt.Robot installed in the Processing IDE (they are usually alreay present in the Processing IDE)
 
 # Hardware manufacturing
 Screw the five GY-521 sensors on a small piece of wood (7cmx4cm is ok). Then you have to came up with a way to attach these piece of wood to your body, we have used strings.
 The Arduino has to be attatched to the player body, we screwd the Arduino on a wood board and then attach the wood board to a belt.
 Then cables have to connect the Arduino to every sensor, following the wirings explained in the wirings section of this guide. Then you need a long USB cable to connect the Arduino to the PC in order to play.
 
-# Wirings
+# Wirings 
+https://github.com/SZamboni/ProjectAres/blob/master/Wirings_bb.png
 The wirings is very simple: VCC, GND, SDA, SCL for every sensor are in parallel with all the other sensors and ther attatched to Arduino.
 Then every sensor has its AD0 pin attatched to a different pin to Arduino (Right Leg Sensor -> pin 2 Arduino, Left Leg Sensor -> pin 3 Arduino, Head Sensor -> pin 4 Arduino, Right Arm Sensor -> pin 5 Arduino, Left Arm Sensor -> pin 6 Arduino)
 
 # Final product
 The final product shoul look something like this when dressed:
-
+https://github.com/SZamboni/ProjectAres/blob/master/IMG_20180814_153559.jpg
 As you can see there are 5 sensors, one for ecery arm, one for every leg and one on the head, attatchet do a running band. Every sensor is connected to the Arduino following the previously explained wirings and fos stability porupouse we weld all the connection to the wirings and covered the welding with insulating tape.
 
 # Software instruction
@@ -39,14 +40,14 @@ If you have some problems check the COM port open in the Processing IDE.
 
 # Keys setup
 The default keys configuration is the following:
--Right Arm = v key
--Left Arm = c key
--Right Leg = x key
--Left Leg = z key
--Head Up = w key
--Head Down = s key
--Head Left = a key
--Head Right = d key
+- Right Arm = v key
+- Left Arm = c key
+- Right Leg = x key
+- Left Leg = z key
+- Head Up = w key
+- Head Down = s key
+- Head Left = a key
+- Head Right = d key
 
 When you make a movement with a limb the key is pressed and released after 0.1sec, meanwhile when you move the head the key is pressed and released when your head returns in the starting position.
 
